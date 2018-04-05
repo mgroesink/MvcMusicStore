@@ -10,16 +10,12 @@ namespace MvcMusicStore.Controllers
 {
     public class StoreController : Controller
     {
+        ApplicationDbContext context = new ApplicationDbContext();
+
         // GET: Store
         public ActionResult Index()
         {
-            var genres = new List<Genre>
-            {
-                new Genre {Name = "Disco" , Id = 1},
-                new Genre {Name = "Jazz" , Id = 2},
-                new Genre {Name = "Rock" , Id = 3}
-            };
-            return View(genres);
+            return View(context.Genres);
         }
 
         // GET: Store/Browse?genre=Disco
