@@ -31,5 +31,10 @@ namespace MvcMusicStore.Controllers
             context.SaveChanges();
             return View();
         }
+
+        public ActionResult Edit(int id)
+        {
+            return View();
+        }
     }
 }
