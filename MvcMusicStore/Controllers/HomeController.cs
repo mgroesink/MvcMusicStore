@@ -10,6 +10,7 @@ namespace MvcMusicStore.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Title = "Index";
             return View();
         }
 
