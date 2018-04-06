@@ -190,6 +190,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ArtistController.cs" />
     <Compile Include="Controllers\GenreController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -207,6 +208,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-MvcMusicStore-20180403042739.mdf" />
+    <Content Include="App_Data\aspnet-MvcMusicStore-20180403042739_log.ldf">
+      <DependentUpon>aspnet-MvcMusicStore-20180403042739.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\home-showcase.png" />
@@ -272,10 +277,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Genre\Index.cshtml" />
     <Content Include="Views\Genre\Create.cshtml" />
+    <Content Include="Views\Genre\Details.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
